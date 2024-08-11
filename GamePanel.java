@@ -9,30 +9,28 @@ public class GamePanel extends JPanel implements ActionListener{
     private int counter_for_cherry = 0;
 
     private static final int WIDTH = 750;
-	private static final int HEIGHT = 750;
+    private static final int HEIGHT = 750;
 
-	private int SQUARE_SIZE;
+    private int SQUARE_SIZE;
     private int GAME_UNITS;
 
     private int x[];
-	private int y[];
+    private int y[];
+	
+    private boolean isAlive = false;
 
-	private boolean isAlive = false;
-
-	private static final int DELAY = 100;
-	private Timer timer;
+    private static final int DELAY = 100;
+    private Timer timer;
     private Random random;
 
-	private Apple apple;
+    private Apple apple;
     private Cherry cherry;
 
     private Snake snake;
 
     private char direction = 'R'; 
-   
 
 	
-
     public GamePanel(int val, int speed) {
         random = new Random(); 
 
